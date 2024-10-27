@@ -62,46 +62,6 @@ i {
 }
 
 
-header {
-  padding-right: 25px;
-  background: #1f1f1f;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-header .main-link {
-  padding: 25px;
-  padding-right: 0;
-  color: mediumpurple;
-  font-size: 20px;
-}
-
-header .main-link span {
-  border-bottom: 3.5px solid;
-}
-
-header div {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-header .telegram {
-  font-size: 30px;
-  height: 30px;
-}
-
-header .button {
-  padding: 12px 25px;
-  border-radius: 15px;
-  font-size: 15px;
-  background: mediumpurple;
-  color: black;
-}
-
-
 main section {
   display: flex;
   align-items: center;
@@ -274,6 +234,86 @@ footer .column .links {
 footer .column .links a {
   width: fit-content;
   border-bottom: 2px solid white;
+}
+
+
+
+main section.event .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+main section.event .content > * {
+  height: calc(100vh - 100px - 75px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+main section.event h1 {
+  font-size: 30px;
+}
+
+main section.event img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+main section.event .button {
+  width: fit-content;
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 15px;
+  background: mediumpurple;
+  color: black;
+  cursor: pointer;
+}
+
+main section.event .start,
+main section.event .end {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+main section.event .question,
+main section.event .end,
+main section.event .success {
+  display: none;
+}
+
+main section.event .answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+main section.event .answers .button {
+  width: 100%;
+}
+
+main section.event .end .row {
+  display: flex;
+  gap: 15px;
+}
+
+main section.event .end .button.additional {
+  border: 2px solid #2f2f2f;
+  background: none;
+  color: #ccc;
+}
+
+main section.event .promo {
+  padding: 15px;
+  background: #1f1f1f;
+  color: mediumpurple;
+  border-radius: 15px;
 }
 
 

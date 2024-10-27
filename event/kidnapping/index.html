@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>GIGABOT</title>
+
+  <link href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+  <link href="https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css" rel="stylesheet">
+
+  <link href="../../static/css/header.css" rel="stylesheet">
+  <link href="../../static/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <a class="main-link" href=""><span>GIGA</span>BOT</a>
+
+    <div>
+      <a class="telegram" href="https://t.me/TodayGigabot" target="_blank"><i class="fi fi-brands-telegram telegram"></i></a>
+      <a class="button" href="https://www.donationalerts.com/r/the_angel_smerti">Донат</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="event">
+      <div class="content">
+        <div class="start">
+          <img src="../../static/img/event/kidnapping.png" onclick="success()">
+
+          <div class="text">
+            <h1>Гигачада похитили?!</h1>
+
+            <p>Цель: найти Гигачада!<br>Если выполнишь успешно, получишь 1 000 поинтов!</p>
+          </div>
+
+          <div class="button" onclick="q1()">Я в деле!</div>
+        </div>
+
+        <div class="success">
+          <img src="../../static/img/event/kidnapping-complete.png">
+
+          <h1>Гигачад на свободе!</h1>
+
+          <p>Браво, воин! Ты один из лучших!</p>
+
+          <p>В награду за спасение Гигачад дарует тебе промокод на 1 000 поинтов! Вот он:</p>
+
+          <p class="promo">GIGAKIDNAPPING</p>
+
+          <span class="small">P.S. не очень сложно, не правда ли? :)</span>
+        </div>
+
+        <div class="question q1">
+          <p>Простой вопрос</p>
+
+          <h1>Где вы были вчера?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q2()">Дома</a>
+            <a class="button" onclick="q2()">В туалете</a>
+            <a class="button" onclick="q2()">За компом</a>
+            <a class="button" onclick="q2()">В чёрной дыре</a>
+          </div>
+        </div>
+
+        <div class="question q2">
+          <p>Простой вопрос</p>
+
+          <h1>Что вы там делали?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q3()">Кушал</a>
+            <a class="button" onclick="q3()">Ел</a>
+            <a class="button" onclick="q3()">Хавал</a>
+            <a class="button" onclick="q3()">Жрал</a>
+          </div>
+        </div>
+
+        <div class="question q3">
+          <p>Средний вопрос</p>
+
+          <h1>Кто из авторов бота лучше?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q4()">Invulnerable</a>
+            <a class="button" onclick="q4()">GSXLT</a>
+            <a class="button" onclick="q4()">Кто это такие?</a>
+            <a class="button" onclick="q4()">Оба тупые</a>
+          </div>
+        </div>
+
+        <div class="question q4">
+          <p>Средний вопрос</p>
+
+          <h1>Сколько углов у додекаэдра?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q5()">16</a>
+            <a class="button" onclick="q5()">48</a>
+            <a class="button" onclick="q5()">128</a>
+            <a class="button" onclick="q5()">Что это?</a>
+          </div>
+        </div>
+
+        <div class="question q5">
+          <p>Сложный вопрос</p>
+
+          <h1>Сколько стоит реклама в GIGABOT?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q6()">100 ₽</a>
+            <a class="button" onclick="q6()">5 000 ₽ в месяц</a>
+            <a class="button" onclick="q6()">Много</a>
+            <a class="button" onclick="q6()">Реклама? ФУ-У-У</a>
+          </div>
+        </div>
+
+        <div class="question q6">
+          <p>Сложный вопрос</p>
+
+          <h1>あなたは戦う準備ができていますか？</h1>
+
+          <div class="answers">
+            <a class="button" onclick="q7()"><b>絶対！</b></a>
+            <a class="button" onclick="q7()"><b>もうちょっと。</b></a>
+            <a class="button" onclick="q7()"><b>いいえ。</b></a>
+            <a class="button" onclick="q7()"><b>それは何ですか？</b></a>
+          </div>
+        </div>
+
+        <div class="question q7">
+          <p>Невозможный вопрос</p>
+
+          <h1>Ты уверен?</h1>
+
+          <div class="answers">
+            <a class="button" onclick="end()">Да</a>
+            <a class="button" onclick="end()">Да</a>
+            <a class="button" onclick="end()">Да</a>
+            <a class="button" onclick="end()">Да</a>
+          </div>
+        </div>
+
+        <div class="end">
+          <img src="../../static/img/event/kidnapping.png">
+
+          <div class="text">
+            <h1>Ты похитил Гигачада?!</h1>
+
+            <p>Результат ответов показал, что это ты! Предатель!</p>
+          </div>
+
+          <div class="row">
+            <a href="../../" class="button">Умереть</a>
+            <a href="" class="button additional">Еще раз</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function q1() {
+        let startContainer = document.querySelector("main section.event .start");
+        let question1Container = document.querySelector("main section.event .q1");
+        startContainer.style.display = "none";
+        question1Container.style.display = "flex";
+      };
+
+      function q2() {
+        let startContainer = document.querySelector("main section.event .q1");
+        let question2Container = document.querySelector("main section.event .q2");
+        startContainer.style.display = "none";
+        question2Container.style.display = "flex";
+      };
+
+      function q3() {
+        let startContainer = document.querySelector("main section.event .q2");
+        let question3Container = document.querySelector("main section.event .q3");
+        startContainer.style.display = "none";
+        question3Container.style.display = "flex";
+      };
+
+      function q4() {
+        let startContainer = document.querySelector("main section.event .q3");
+        let question4Container = document.querySelector("main section.event .q4");
+        startContainer.style.display = "none";
+        question4Container.style.display = "flex";
+      };
+
+      function q5() {
+        let startContainer = document.querySelector("main section.event .q4");
+        let question5Container = document.querySelector("main section.event .q5");
+        startContainer.style.display = "none";
+        question5Container.style.display = "flex";
+      };
+
+      function q6() {
+        let startContainer = document.querySelector("main section.event .q5");
+        let question6Container = document.querySelector("main section.event .q6");
+        startContainer.style.display = "none";
+        question6Container.style.display = "flex";
+      };
+
+      function q7() {
+        let startContainer = document.querySelector("main section.event .q6");
+        let question7Container = document.querySelector("main section.event .q7");
+        startContainer.style.display = "none";
+        question7Container.style.display = "flex";
+      };
+
+      function end() {
+        let startContainer = document.querySelector("main section.event .q7");
+        let endContainer = document.querySelector("main section.event .end");
+        startContainer.style.display = "none";
+        endContainer.style.display = "flex";
+      };
+
+      function success() {
+        let startContainer = document.querySelector("main section.event .start");
+        let successContainer = document.querySelector("main section.event .success");
+        startContainer.style.display = "none";
+        successContainer.style.display = "flex";
+      };
+    </script>
+  </main>
+
+  <footer>
+    <div class="column">
+      <h2>Связаться</h2>
+
+      <div class="links">
+        <a href="https://t.me/YourAngelOfDeath">Менеджер</a>
+        <a href="https://t.me/george20097">Разработчик</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+
+header {
+  padding-right: 25px;
+  background: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+header .main-link {
+  padding: 25px;
+  padding-right: 0;
+  color: mediumpurple;
+  font-size: 20px;
+}
+
+header .main-link span {
+  border-bottom: 3.5px solid;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+header .telegram {
+  font-size: 30px;
+  height: 30px;
+}
+
+header .button {
+  padding: 12px 25px;
+  border-radius: 15px;
+  font-size: 15px;
+  background: mediumpurple;
+  color: black;
+}
